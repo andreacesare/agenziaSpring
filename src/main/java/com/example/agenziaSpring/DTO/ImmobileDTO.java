@@ -2,6 +2,7 @@ package com.example.agenziaSpring.DTO;
 
 import com.example.agenziaSpring.Entity.Annesso;
 import com.example.agenziaSpring.Entity.Proprietario;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -9,6 +10,7 @@ import jakarta.persistence.OneToMany;
 
 import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ImmobileDTO {
     private String id;
     private String tipo;

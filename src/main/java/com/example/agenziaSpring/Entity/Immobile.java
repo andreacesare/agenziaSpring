@@ -62,6 +62,9 @@ public class Immobile {
     public void setProprietario(Proprietario proprietario) {
         this.proprietario = proprietario;
     }
+    public List<Annesso> getAnnessi() {
+        return annessi;
+    }
 
     public String toString(){
         return id+"\t tipo:"+tipo+"\t vani:"+vani+"\t costo:"+costo+"\t suprficie mq:"+superficie+"\t anno:"+anno;

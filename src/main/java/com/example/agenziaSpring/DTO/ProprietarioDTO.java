@@ -1,11 +1,12 @@
 package com.example.agenziaSpring.DTO;
 
 import com.example.agenziaSpring.Entity.Immobile;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 import java.util.List;
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProprietarioDTO {
 
     private String id;
